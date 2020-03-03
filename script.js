@@ -9,8 +9,16 @@ function createListElement() {
   newLi.appendChild(document.createTextNode(input.value));
   //append list element in newDiv
   newDiv.appendChild(newLi);
+  //clean input field
+  input.value = "";
 }
 
+//add List after click
 button.addEventListener("click", () => {
   if (input.value.length > 0) createListElement();
+});
+
+//add list after keypress
+input.addEventListener("keypress", event => {
+  if (input.value.length > 0 && event.keyCode === 13) createListElement();
 });
