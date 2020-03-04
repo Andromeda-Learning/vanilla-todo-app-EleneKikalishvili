@@ -1,11 +1,11 @@
-var input = document.getElementById("userinput");
-var ul = document.querySelector("ul");
-var button = document.getElementById("enter");
+let input = document.getElementById("userinput");
+let ul = document.querySelector("ul");
+let button = document.getElementById("enter");
 
 function createListElement() {
-  var newDiv = document.createElement("div");
+  let newDiv = document.createElement("div");
   ul.appendChild(newDiv);
-  var newLi = document.createElement("li");
+  let newLi = document.createElement("li");
   newLi.appendChild(document.createTextNode(input.value));
   //append list element in newDiv
   newDiv.appendChild(newLi);
