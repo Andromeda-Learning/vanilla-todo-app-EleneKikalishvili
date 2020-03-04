@@ -22,8 +22,8 @@ function createListElement() {
   //create corresponding delete button
   let delBtn = document.createElement("button");
   delBtn.appendChild(document.createTextNode("delete"));
-  delBtn.addEventListener("click", () => ul.removeChild(newDiv));
   newDiv.appendChild(delBtn);
+  delBtn.addEventListener("click", () => ul.removeChild(newDiv));
 }
 
 form.onsubmit = e => {
