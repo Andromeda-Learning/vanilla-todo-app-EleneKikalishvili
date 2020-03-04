@@ -11,6 +11,15 @@ function createListElement() {
   newDiv.appendChild(newLi);
   //clean input field
   input.value = "";
+
+  //create rename button
+  let renBtn = document.createElement("button");
+  renBtn.appendChild(document.createTextNode("rename"));
+  newDiv.appendChild(renBtn);
+  renBtn.addEventListener(
+    "click",
+    () => (newLi.innerHTML = window.prompt("make changes: "))
+  );
 }
 
 //add List after click
