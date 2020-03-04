@@ -18,6 +18,12 @@ function createListElement() {
     "click",
     () => (newLi.innerHTML = window.prompt("make changes: "))
   );
+
+  //create corresponding delete button
+  let delBtn = document.createElement("button");
+  delBtn.appendChild(document.createTextNode("delete"));
+  delBtn.addEventListener("click", () => ul.removeChild(newDiv));
+  newDiv.appendChild(delBtn);
 }
 
 form.onsubmit = e => {
