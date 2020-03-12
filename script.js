@@ -12,7 +12,6 @@ function createListElement() {
 }
 
 form.onsubmit = e => {
-  if (input.value.length > 0 && input.value.replace(/\s/g, ""))
-    createListElement();
+  if (input.value.length > 0 && input.value.trim() !== "") createListElement();
   e.preventDefault();
 };
