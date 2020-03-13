@@ -11,7 +11,7 @@ function createListElement() {
   input.value = "";
 
   //create rename button
-  let renBtn = document.createElement("button");
+  const renBtn = document.createElement("button");
   renBtn.appendChild(document.createTextNode("rename"));
   newDiv.appendChild(renBtn);
   renBtn.addEventListener(
@@ -20,7 +20,7 @@ function createListElement() {
   );
 
   //create corresponding delete button
-  let delBtn = document.createElement("button");
+  const delBtn = document.createElement("button");
   delBtn.appendChild(document.createTextNode("delete"));
   newDiv.appendChild(delBtn);
   delBtn.addEventListener("click", () => ul.removeChild(newDiv));
