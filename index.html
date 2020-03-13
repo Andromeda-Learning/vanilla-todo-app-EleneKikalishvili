@@ -2,15 +2,19 @@
 <html>
   <head>
     <title>ToDoApp</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <h1>To Do List</h1>
     <form>
-      <div>
+      <div class="d-flex justify-content-center container flex-column">
         <input type="text" placeholder="enter items" />
-        <input type="submit" />
-        <ul></ul>
+        <input type="submit" class="btn btn-primary" />
+        <ul class="mt-auto list"></ul>
       </div>
     </form>
     <script type="text/javascript" src="script.js"></script>
