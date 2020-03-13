@@ -11,7 +11,7 @@ function createListElement() {
   input.value = "";
 
   //create rename button
-  let renBtn = document.createElement("button");
+  const renBtn = document.createElement("button");
   renBtn.appendChild(document.createTextNode("rename"));
   newDiv.appendChild(renBtn);
   renBtn.addEventListener(
